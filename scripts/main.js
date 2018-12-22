@@ -32,9 +32,23 @@ class App extends Component{
 
 class Header extends Component
 {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            current : this.props.selectedMenu
+        }
+    }
+
+    handleclick(e){
+    e.preventDefault();
+    }
+
+
+
     render (){
         return (
-          <Menu mode="horizontal" selectedKeys="home" onClick={this.handleclick}>
+          <Menu mode="horizontal" selectedKeys={[this.state.current]} onClick={this.handleclick}>
              <Menu.Item key="home">
                <Icon type="home" />Home
              </Menu.Item>
@@ -42,7 +56,7 @@ class Header extends Component
              <Icon type="appstore" />Products
              </Menu.Item>
              <Menu.Item key="alipay">
-            <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Example- Link</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Example- Link</a>
             </Menu.Item>
 
              <SubMenu title={<span className="submenu-title-wrapper"><Icon type="setting" />More Page</span>}>
