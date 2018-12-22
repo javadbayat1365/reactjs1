@@ -16,7 +16,7 @@ class App extends Component{
             <div>
               <Row>
                 <Col span={24}>
-                <Header />
+                <Header selectedMenu='app'/>
 
                 {/* <Welcome />
                 <Products />
