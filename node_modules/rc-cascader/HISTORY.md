@@ -2,6 +2,27 @@
 
 ---
 
+## 0.16.0 / 2018/08/23
+
+- Add loadingIcon.
+
+## 0.15.0 / 2018/08/10
+
+- Add expandIcon.
+
+## 0.14.0 / 2018/07/03
+
+- Fix typo `filedNames` to `fieldNames`. [ant-design/ant-design#10896](https://github.com/ant-design/ant-design/issues/10896)
+
+## 0.13.0 / 2018/04/27
+
+- Allow to custom the field name of options. [#23](https://github.com/react-component/cascader/pull/23)
+
+## 0.12.0
+
+- Add es build
+- support React 16
+
 ## 0.11.0 / 2017-01-17
 
 - Add Keyboard support

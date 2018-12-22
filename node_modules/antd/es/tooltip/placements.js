@@ -78,6 +78,7 @@ export default function getPlacements() {
     };
     Object.keys(placementMap).forEach(function (key) {
         placementMap[key] = config.arrowPointAtCenter ? _extends({}, placementMap[key], { overflow: getOverflowOptions(autoAdjustOverflow), targetOffset: targetOffset }) : _extends({}, rcPlacements[key], { overflow: getOverflowOptions(autoAdjustOverflow) });
+        placementMap[key].ignoreShake = true;
     });
     return placementMap;
 }

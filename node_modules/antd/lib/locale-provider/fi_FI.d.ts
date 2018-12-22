@@ -23,6 +23,7 @@ declare const _default: {
         emptyText: string;
         selectAll: string;
         selectInvert: string;
+        sortTitle: string;
     };
     Modal: {
         okText: string;
