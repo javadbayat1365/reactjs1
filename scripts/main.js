@@ -15,14 +15,17 @@ class App extends Component{
         return (
             <div>
               <Row>
-                <Col span={24}>
-                <Header selectedMenu='app'/>
+<Col span={8}></Col>
+                <Col span={8}>
+                <Header selectedMenu='home'/>
 
                 {/* <Welcome />
                 <Products />
                 <Footer /> */}
                 
                 </Col>  
+<Col span={8}></Col>
+
               </Row>
               </div>
         );
